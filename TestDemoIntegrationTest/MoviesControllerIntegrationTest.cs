@@ -28,7 +28,7 @@ namespace TestDemoIntegrationTest
             //Act
             using (var context = new TestDemoContext(options))
             {
-                context.Movie.Add(new Movie{Genre = "Horror",Id = 1,ReleaseDate = DateTime.Now,Title = "Batman"});
+                context.Movie.Add(new Movie { Genre = "Horror", Id = 1, ReleaseDate = DateTime.Now, Title = "Batman" });
                 context.SaveChanges();
             }
 
@@ -41,7 +41,7 @@ namespace TestDemoIntegrationTest
                 var Movie = controller.Get(1);
                 Assert.IsType<OkResult>(Movie.Result.Result);
             }
-            
+
         }
         [Fact]
         public void Assert_GetById_ReturnsNotFound_IfIdDoesntExist()
