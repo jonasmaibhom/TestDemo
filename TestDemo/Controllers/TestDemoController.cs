@@ -29,17 +29,6 @@ namespace TestDemo.Controllers
             return await repository.GetAll();
         }
 
-        // GET: api/[controller]/5
-        //[HttpGet("{id}")]
-        //public async Task<ActionResult<TEntity>> Get(int id)
-        //{
-        //    var movie = await repository.Get(id);
-        //    if (movie == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    return movie;
-        //}
         [HttpGet("{id}")]
         public async Task<ActionResult<TEntity>> Get(int id)
         {
