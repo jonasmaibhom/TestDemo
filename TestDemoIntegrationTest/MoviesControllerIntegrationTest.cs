@@ -15,27 +15,6 @@ namespace TestDemoIntegrationTest
 {
     public class MoviesControllerIntegrationTest
     {
-        //[Fact]
-        //public void asdasdsadt()
-        //{
-        //    //Arrange
-        //    var movie = new Mock<Movie>();
-        //    var repo = new Mock<IRepository<IEntity>>();
-        //    var controller = new Mock<MoviesController>(repo.Object);
-
-
-
-        //    //Act
-        //    var movies = controller.Object.Get(1);
-
-
-        //    //Assert
-        //    Assert.IsType<OkResult>(movies.Result.Result);
-        //}
-
-
-
-
 
 
         [Fact]
